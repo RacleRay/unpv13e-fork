@@ -16,7 +16,8 @@
  *warning: passing arg 2 of `connect' discards `const' from pointer target type
  */
 
-#include	"unp.h"
+#include	"../lib/unp.h"
+#include <netinet/in.h>
 
 int
 Accept(int fd, struct sockaddr *sa, socklen_t *salenptr)
@@ -72,69 +73,69 @@ Getsockopt(int fd, int level, int optname, void *optval, socklen_t *optlenptr)
 		err_sys("getsockopt error");
 }
 
-#ifdef	HAVE_INET6_RTH_INIT
-int
-Inet6_rth_space(int type, int segments)
-{
-	int ret;
+// #ifdef	HAVE_INET6_RTH_INIT
+// int
+// Inet6_rth_space(int type, int segments)
+// {
+// 	int ret;
 	
-	ret = inet6_rth_space(type, segments);
-	if (ret < 0)
-		err_quit("inet6_rth_space error");
+// 	ret = inet6_rth_space(type, segments);
+// 	if (ret < 0)
+// 		err_quit("inet6_rth_space error");
 
-	return ret;
-}
+// 	return ret;
+// }
 
-void *
-Inet6_rth_init(void *rthbuf, socklen_t rthlen, int type, int segments)
-{
-	void *ret;
+// void *
+// Inet6_rth_init(void *rthbuf, socklen_t rthlen, int type, int segments)
+// {
+// 	void *ret;
 
-	ret = inet6_rth_init(rthbuf, rthlen, type, segments);
-	if (ret == NULL)
-		err_quit("inet6_rth_init error");
+// 	ret = inet6_rth_init(rthbuf, rthlen, type, segments);
+// 	if (ret == NULL)
+// 		err_quit("inet6_rth_init error");
 
-	return ret;
-}
+// 	return ret;
+// }
 
-void
-Inet6_rth_add(void *rthbuf, const struct in6_addr *addr)
-{
-	if (inet6_rth_add(rthbuf, addr) < 0)
-		err_quit("inet6_rth_add error");
-}
+// void
+// Inet6_rth_add(void *rthbuf, const struct in6_addr *addr)
+// {
+// 	if (inet6_rth_add(rthbuf, addr) < 0)
+// 		err_quit("inet6_rth_add error");
+// }
 
-void
-Inet6_rth_reverse(const void *in, void *out)
-{
-	if (inet6_rth_reverse(in, out) < 0)
-		err_quit("inet6_rth_reverse error");
-}
+// void
+// Inet6_rth_reverse(const void *in, void *out)
+// {
+// 	if (inet6_rth_reverse(in, out) < 0)
+// 		err_quit("inet6_rth_reverse error");
+// }
 
-int
-Inet6_rth_segments(const void *rthbuf)
-{
-	int ret;
+// int
+// Inet6_rth_segments(const void *rthbuf)
+// {
+// 	int ret;
 
-	ret = inet6_rth_segments(rthbuf);
-	if (ret < 0)
-		err_quit("inet6_rth_segments error");
+// 	ret = inet6_rth_segments(rthbuf);
+// 	if (ret < 0)
+// 		err_quit("inet6_rth_segments error");
 
-	return ret;
-}
+// 	return ret;
+// }
 
-struct in6_addr *
-Inet6_rth_getaddr(const void *rthbuf, int idx)
-{
-	struct in6_addr *ret;
+// struct in6_addr *
+// Inet6_rth_getaddr(const void *rthbuf, int idx)
+// {
+// 	struct in6_addr *ret;
 
-	ret = inet6_rth_getaddr(rthbuf, idx);
-	if (ret == NULL)
-		err_quit("inet6_rth_getaddr error");
+// 	ret = inet6_rth_getaddr(rthbuf, idx);
+// 	if (ret == NULL)
+// 		err_quit("inet6_rth_getaddr error");
 
-	return ret;
-}
-#endif
+// 	return ret;
+// }
+// #endif
 
 #ifdef HAVE_KQUEUE
 int

@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/sighld_waitpid.dir/sig_chld_waitpid.c.o -o sighld_waitpid  ../lib/libunp.a 

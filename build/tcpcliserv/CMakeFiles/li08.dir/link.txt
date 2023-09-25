@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/li08.dir/tcpcli08.c.o -o li08  ../lib/libunp.a 

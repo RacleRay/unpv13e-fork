@@ -1,0 +1,236 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "tcpcliserv/sihldwait"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"tcpcliserv/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 40,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG -std=gnu11"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/debug"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/icmpd"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/key"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/lib"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/libfree"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/libgai"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/libroute"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/mysdr"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/nonblock"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/ping/old"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/ping"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/route"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/rtt"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/sctp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/server"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/sock"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/sparc64-unknown-freebsd5.1"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/ssntp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/streams"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/tcpcliserv"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/test"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/threads"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/traceroute"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/racle/SystemCode/unpv13e/udpcksum"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "unp::@306ed2d68c6501e8728f"
+		}
+	],
+	"id" : "sihldwait::@a2c38579c16bd36704b6",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../lib/libunp.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "sihldwait",
+	"nameOnDisk" : "sihldwait",
+	"paths" : 
+	{
+		"build" : "tcpcliserv",
+		"source" : "tcpcliserv"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tcpcliserv/sigchldwait.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

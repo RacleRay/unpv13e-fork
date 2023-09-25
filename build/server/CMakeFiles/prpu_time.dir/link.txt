@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/prpu_time.dir/pr_cpu_time.c.o -o prpu_time  ../lib/libunp.a 

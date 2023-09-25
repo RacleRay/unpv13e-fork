@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/strli08.dir/str_cli08.c.o -o strli08  ../lib/libunp.a 

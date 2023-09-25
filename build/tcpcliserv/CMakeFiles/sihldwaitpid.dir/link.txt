@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/sihldwaitpid.dir/sigchldwaitpid.c.o -o sihldwaitpid  ../lib/libunp.a 

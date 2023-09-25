@@ -9,6 +9,7 @@ static ssize_t
 my_read(int fd, char *ptr)
 {
 
+    // when read_buf is empty.
 	if (read_cnt <= 0) {
 again:
 		if ( (read_cnt = read(fd, read_buf, sizeof(read_buf))) < 0) {
@@ -20,6 +21,7 @@ again:
 		read_ptr = read_buf;
 	}
 
+    // read one char out
 	read_cnt--;
 	*ptr = *read_ptr++;
 	return(1);

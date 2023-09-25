@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/str_ho09.dir/str_echo09.c.o -o str_ho09  ../lib/libunp.a 

@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/webhild_r.dir/web_child_r.c.o -o webhild_r  ../lib/libunp.a 

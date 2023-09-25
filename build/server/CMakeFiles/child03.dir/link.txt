@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/child03.dir/child03.c.o -o child03  ../lib/libunp.a 

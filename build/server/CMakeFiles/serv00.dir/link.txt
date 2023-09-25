@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/serv00.dir/serv00.c.o -o serv00  ../lib/libunp.a 

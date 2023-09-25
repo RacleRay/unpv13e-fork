@@ -9,6 +9,7 @@ char *
 sock_ntop(const struct sockaddr *sa, socklen_t salen)
 {
     char		portstr[8];
+    // it is not thread safe
     static char str[128];		/* Unix domain is largest */
 
 	switch (sa->sa_family) {

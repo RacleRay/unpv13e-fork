@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/li10.dir/tcpcli10.c.o -o li10  ../lib/libunp.a 

@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/lk_pthread.dir/lock_pthread.c.o -o lk_pthread  ../lib/libunp.a 

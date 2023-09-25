@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/tsigpipe.dir/tsigpipe.c.o -o tsigpipe  ../lib/libunp.a 

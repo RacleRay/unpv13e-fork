@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/pthread08.dir/pthread08.c.o -o pthread08  ../lib/libunp.a 

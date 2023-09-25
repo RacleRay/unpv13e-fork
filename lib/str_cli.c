@@ -5,6 +5,7 @@ str_cli(FILE *fp, int sockfd)
 {
 	char	sendline[MAXLINE], recvline[MAXLINE];
 
+    // 阻塞
 	while (Fgets(sendline, MAXLINE, fp) != NULL) {
 
 		Writen(sockfd, sendline, strlen(sendline));

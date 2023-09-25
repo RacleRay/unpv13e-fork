@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/pserv09.dir/tcpserv09.c.o -o pserv09  ../lib/libunp.a 

@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/lk_ntl.dir/lock_fcntl.c.o -o lk_ntl  ../lib/libunp.a 

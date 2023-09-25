@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/readline.dir/readline.c.o -o readline  ../lib/libunp.a 

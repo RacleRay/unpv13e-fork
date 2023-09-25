@@ -1,0 +1,1 @@
+/usr/sbin/clang -O3 -DNDEBUG CMakeFiles/clientrst.dir/clientrst.c.o -o clientrst  ../lib/libunp.a 
