@@ -5,3 +5,6 @@ config.log
 config.status
 *.o
 *.a
+
+.build/
+.cache/
